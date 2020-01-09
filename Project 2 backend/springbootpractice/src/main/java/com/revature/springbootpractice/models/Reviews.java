@@ -1,10 +1,7 @@
 package com.revature.springbootpractice.models;
 
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "movie_reviews")
@@ -13,6 +10,7 @@ public class Reviews {
 
 
     @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     @Column(name="reviewid")
     int review_id;
     @Column(name="userid")

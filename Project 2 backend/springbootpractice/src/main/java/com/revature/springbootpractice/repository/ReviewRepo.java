@@ -10,9 +10,9 @@ import java.util.List;
 @Repository
 public interface ReviewRepo extends JpaRepository<Reviews, Integer> {
 
-    public List<Reviews> findAll();
-    public List<Reviews> findAllByReview_id(int reviewid);
-
-
+//    public List<Reviews> findAll();
+//    public List<Reviews> findAllByReview_id(int reviewid);
+//
+//
 
 }
